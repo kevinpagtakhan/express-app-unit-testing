@@ -23,7 +23,7 @@ const dbOptions = {
   }
 };
 
-mongoose.connect(config.DBHost, dbOptions, (err) => console.log(err || "Connected to " + config.DBHost));
+mongoose.connect(config.DBHost, dbOptions);
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 
