@@ -36,7 +36,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: 'application/json' }));
 
-// app.use('/book', postRoutes);
+app.use('/posts', postRoutes);
 
 app.get('/', (req, res) => res.json({ message: 'Welcome to Postagram!' }));
 
